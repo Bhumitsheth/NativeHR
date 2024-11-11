@@ -2,25 +2,54 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <!-- Basic App Configuration -->
   <key>CFBundleDevelopmentRegion</key>
   <string>en</string>
+
   <key>CFBundleExecutable</key>
   <string>App</string>
+
   <key>CFBundleIdentifier</key>
-  <string>io.flutter.flutter.app</string>
+  <string>io.flutter.flutter.app</string> <!-- Update this to match your app’s bundle identifier -->
+
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
+
   <key>CFBundleName</key>
   <string>App</string>
+
   <key>CFBundlePackageType</key>
   <string>FMWK</string>
+
   <key>CFBundleShortVersionString</key>
   <string>1.0</string>
+
   <key>CFBundleSignature</key>
   <string>????</string>
+
   <key>CFBundleVersion</key>
   <string>1.0</string>
+
   <key>MinimumOSVersion</key>
   <string>12.0</string>
+
+  <!-- Permissions for Dependencies -->
+  <!-- Geolocator (Location Access) -->
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>This app needs access to your location to check attendance.</string>
+
+  <key>NSLocationAlwaysUsageDescription</key>
+  <string>This app needs access to your location to check attendance even when running in the background.</string>
+
+  <!-- Permission Handler (Camera and Photos) -->
+  <key>NSCameraUsageDescription</key>
+  <string>This app needs access to your camera to capture photos for attendance records.</string>
+
+  <key>NSPhotoLibraryUsageDescription</key>
+  <string>This app needs access to your photo library to upload images for attendance verification.</string>
+
+  <key>NSPhotoLibraryAddUsageDescription</key>
+  <string>This app needs access to your photo library to save images taken with the app.</string>
+
 </dict>
 </plist>
